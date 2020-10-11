@@ -1,0 +1,48 @@
+main.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.register-page .main-content {
+  max-width: 600px;
+  background-color: #ececec;
+  padding: 2rem 5rem;
+  flex-grow: 1;
+}
+
+.register-page .form-header {
+  padding: 2rem 0 0 0;
+}
+
+.register-page form {
+  padding: 2rem 0 0 0;
+}
+
+.register-page .form-username {
+  margin-bottom: 1rem;
+}
+
+.register-page form input {
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.register-page form p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.2rem;
+  max-width: 90%;
+  color: $error-color;
+}
+
+.register-page form button {
+  margin-top: 2rem;
+}
+
+.register-page .back-link {
+  color: $primary-color;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}

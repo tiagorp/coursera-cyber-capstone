@@ -1,0 +1,16 @@
+$header1: 4rem;
+$header2: 3.4rem;
+$header3: 2.3rem;
+$header4: 1.6rem;
+$text: 1.4rem;
+$small-text: 1.2rem;
+$xsmall-text: 1rem;
+$gray-text: #2c2c2c;
+$primary-color: #6c63ff;
+$error-color: #d4536c;
+
+@import "global";
+@import "login";
+@import "register";
+@import "registerSuccess";
+@import "inbox";

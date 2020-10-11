@@ -1,0 +1,24 @@
+main.register-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.register-success .main-content {
+  max-width: 1200px;
+  background-color: #ececec;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-success .form-header {
+  padding: 2rem 0 0 0;
+}
+
+.register-page form button {
+  margin-top: 2rem;
+}

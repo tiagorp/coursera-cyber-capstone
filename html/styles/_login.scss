@@ -1,0 +1,78 @@
+main.login-page {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.login-page .intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.login-page .intro-image {
+  flex: 1 1 30rem;
+}
+
+.login-page .intro-login-wrapper {
+  padding: 4rem;
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ececec;
+}
+
+.login-page .login-header {
+  padding: 2rem 0 0 2rem;
+}
+
+.login-page form {
+  padding: 2rem 0 0 2rem;
+}
+
+.login-page .form-username {
+  margin-bottom: 1rem;
+}
+
+.login-page form input {
+  padding: 1rem 2rem;
+  width: 90%;
+}
+
+.login-page form p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.6rem;
+  font-size: 1.2rem;
+  max-width: 90%;
+  color: $error-color;
+}
+
+.login-page form button {
+  margin-top: 2rem;
+}
+
+.login-page .signup {
+  padding: 5rem 0 0 2rem;
+}
+
+.login-page .signup a {
+  color: $primary-color;
+  font-weight: 500;
+}
+
+/* phone mode */
+@media screen and (max-width: 620px) {
+  .login-page .intro {
+    max-width: 97%;
+  }
+
+  .login-page .intro-login-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
