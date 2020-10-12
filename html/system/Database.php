@@ -13,10 +13,15 @@ class Database
 
         if (!isset($GLOBALS['database_connection'])) {
 
-            $serverName = 'localhost';
+            /*$serverName = 'localhost';
             $username = 'capstone';
             $password = '4Eex0Y8S6Wusl!';
-            $databaseName = 'capstone';
+            $databaseName = 'capstone';*/
+
+            $serverName = getenv('DATABASE_HOST');
+            $username = getenv('DATABASE_USER');
+            $password = getenv('DATABASE_PASSWORD');
+            $databaseName = getenv('DATABASE_NAME');
 
             $pdo = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
