@@ -20,7 +20,9 @@ function safeEncrypt(string $message): string
         throw new RangeException('Key is not the correct size (must be 32 bytes).');
     }*/
 
-    $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
+    /*$nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);*/
+
+    $nonce = random_bytes(32);
 
     $cipher = base64_encode(
         $nonce .
