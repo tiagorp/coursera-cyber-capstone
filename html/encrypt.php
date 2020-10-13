@@ -13,8 +13,7 @@ declare(strict_types=1);
 function safeEncrypt(string $message): string
 {
 
-    $key = 'S4JZ8mVvoCsmyYdDlSMLHgNfkPji9pzf';
-
+    $key = getenv('MESSAGEKEY');
 
     if (mb_strlen($key, '8bit') !== SODIUM_CRYPTO_SECRETBOX_KEYBYTES) {
         throw new RangeException('Key is not the correct size (must be 32 bytes).');
