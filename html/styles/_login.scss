@@ -79,6 +79,18 @@ main.login-page {
   font-size: $xsmall-text;
 }
 
+.githubrepo-linkwrapper {
+  text-align: left;
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.githubrepo-linkwrapper a {
+  font-size: $xsmall-text;
+  color: $primary-color;
+}
+
 /* phone mode */
 @media screen and (max-width: 620px) {
   .login-page .intro {

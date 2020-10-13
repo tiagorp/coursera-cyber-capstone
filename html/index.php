@@ -153,6 +153,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </div>
         </div>
         <p class="disclaimer"><b>Tiago Pinho</b> project for Cybersecurity Capstone Project Oct 2020.</p>
+        <div class="githubrepo-linkwrapper"><a href="https://github.com/tiagorp/coursera-cyber-capstone" target="_blank" rel="noopener noreferrer">github repo</a></div>
       </div>
     </div>
   </main>
