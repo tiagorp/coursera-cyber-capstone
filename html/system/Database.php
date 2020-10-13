@@ -29,21 +29,21 @@ class Database
 
     function getDatabase()
     {
-
+        /*
         return array(
             'host' => 'localhost',
             'user' => 'capstone',
             'password' => '4Eex0Y8S6Wusl!',
             'database' => 'capstone'
-        );
+        );*/
 
-        /*
+
         return array(
             'host' => getenv('DATABASE_HOST'),
             'user' => getenv('DATABASE_USER'),
             'password' => getenv('DATABASE_PASSWORD'),
             'database' => getenv('DATABASE_NAME')
-        );*/
+        );
     }
 
     function getConnection()
