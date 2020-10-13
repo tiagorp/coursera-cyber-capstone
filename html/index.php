@@ -152,6 +152,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="register.php">Create an account</a>
           </div>
         </div>
+        <p class="disclaimer"><b>Tiago Pinho</b> project for Cybersecurity Capstone Project Oct 2020.</p>
       </div>
     </div>
   </main>

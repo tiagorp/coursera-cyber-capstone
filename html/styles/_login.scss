@@ -73,6 +73,12 @@ main.login-page {
   color: $primary-color;
 }
 
+.disclaimer {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-size: $xsmall-text;
+}
+
 /* phone mode */
 @media screen and (max-width: 620px) {
   .login-page .intro {
