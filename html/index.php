@@ -128,6 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </svg>
       </div>
       <div class="intro-login-wrapper">
+        <a class="intro-dbdump-link" href="dbdump.php">Get dbdump</a>
         <div class="intro-login">
           <header class="login-header">
             <h2>Already members</h2>

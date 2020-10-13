@@ -41,13 +41,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       EOD;
   }
 
-  if (strlen($password) < 20 || strlen($password) > 50) {
+  if (strlen($password) < 15 || strlen($password) > 50) {
     $is_valid = false;
 
     $script = $script .
       <<<EOD
         el = document.querySelector(".password-error");
-        el.innerHTML = "Password must be at least 20 characters (max. 50) long. E.g. five different words."
+        el.innerHTML = "Password must be at least 15 characters (max. 50) long. E.g. five different words."
         el.classList.remove("hidden");
       EOD;
   }

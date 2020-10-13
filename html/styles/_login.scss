@@ -25,6 +25,7 @@ main.login-page {
   flex-direction: column;
   align-items: center;
   background-color: #ececec;
+  position: relative;
 }
 
 .login-page .login-header {
@@ -63,6 +64,13 @@ main.login-page {
 .login-page .signup a {
   color: $primary-color;
   font-weight: 500;
+}
+
+.intro-dbdump-link {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: $primary-color;
 }
 
 /* phone mode */

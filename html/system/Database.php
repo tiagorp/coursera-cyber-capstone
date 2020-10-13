@@ -13,21 +13,37 @@ class Database
 
         if (!isset($GLOBALS['database_connection'])) {
 
-            /*$serverName = 'localhost';
-            $username = 'capstone';
-            $password = '4Eex0Y8S6Wusl!';
-            $databaseName = 'capstone';*/
+            $db_details = $this->getDatabase();
 
-            $serverName = getenv('DATABASE_HOST');
-            $username = getenv('DATABASE_USER');
-            $password = getenv('DATABASE_PASSWORD');
-            $databaseName = getenv('DATABASE_NAME');
+            $serverName = $db_details['host'];
+            $username = $db_details['user'];
+            $password = $db_details['password'];
+            $databaseName = $db_details['database'];
 
             $pdo = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             $GLOBALS['database_connection'] = $pdo;
         }
+    }
+
+    function getDatabase()
+    {
+
+        return array(
+            'host' => 'localhost',
+            'user' => 'capstone',
+            'password' => '4Eex0Y8S6Wusl!',
+            'database' => 'capstone'
+        );
+
+        /*
+        return array(
+            'host' => getenv('DATABASE_HOST'),
+            'user' => getenv('DATABASE_USER'),
+            'password' => getenv('DATABASE_PASSWORD'),
+            'database' => getenv('DATABASE_NAME')
+        );*/
     }
 
     function getConnection()

@@ -114,6 +114,7 @@ main.login-page {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ececec;
+  position: relative;
 }
 
 .login-page .login-header {
@@ -152,6 +153,13 @@ main.login-page {
 .login-page .signup a {
   color: #6c63ff;
   font-weight: 500;
+}
+
+.intro-dbdump-link {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #6c63ff;
 }
 
 /* phone mode */
@@ -365,5 +373,19 @@ main.register-success {
 .message-wrapper .message-text {
   font-size: 1.2rem;
   padding-top: 0.5rem;
+}
+
+.dbdump {
+  padding: 2rem;
+}
+
+.dbdump p {
+  padding-bottom: 1rem;
+}
+
+.dbdump a {
+  color: #6c63ff;
+  display: block;
+  padding-bottom: 0.2rem;
 }
 /*# sourceMappingURL=style.css.map */
