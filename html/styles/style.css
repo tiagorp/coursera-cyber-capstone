@@ -388,4 +388,9 @@ main.register-success {
   display: block;
   padding-bottom: 0.2rem;
 }
+
+.dbdump .dbdump-back-link {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
 /*# sourceMappingURL=style.css.map */

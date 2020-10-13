@@ -165,6 +165,7 @@ if (isset($_GET['command'])) {
         <a href="dbdump.php?command=users">Users</a>
         <a href="dbdump.php?command=user_session">User Session</a>
         <a href="dbdump.php?command=messages">Messages</a>
+        <a class="dbdump-back-link" href="index.php">Back to login page</a>
     </div>
 </body>
 
