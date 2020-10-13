@@ -22,8 +22,6 @@ function safeEncrypt(string $message): string
 
     $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
 
-    $nonce = random_bytes(32);
-
     $cipher = base64_encode(
         $nonce .
             sodium_crypto_secretbox(
