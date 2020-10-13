@@ -1,4 +1,6 @@
 {
     "name": "trp/coursera-cyber-capstone",
-    "require": {}
+    "require": {
+        "ext-mbstring": "*"
+    }
 }
