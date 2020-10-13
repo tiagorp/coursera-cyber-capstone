@@ -15,12 +15,12 @@ function safeEncrypt(string $message): string
 
     $key = 'S4JZ8mVvoCsmyYdDlSMLHgNfkPji9pzf';
 
-    /*
+
     if (mb_strlen($key, '8bit') !== SODIUM_CRYPTO_SECRETBOX_KEYBYTES) {
         throw new RangeException('Key is not the correct size (must be 32 bytes).');
-    }*/
+    }
 
-    /*$nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);*/
+    $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
 
     $nonce = random_bytes(32);
 

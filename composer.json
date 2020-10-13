@@ -2,6 +2,6 @@
     "name": "trp/coursera-cyber-capstone",
     "require": {
         "ext-mbstring": "*",
-        "ext-libsodium": "*"
+        "ext-sodium": "*"
     }
 }
