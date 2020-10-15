@@ -13,6 +13,9 @@ declare(strict_types=1);
 function safeEncrypt(string $message): string
 {
 
+    // dummy example key
+    //$key = 'S4JZ8mVuhysmyYdDlSMLHgNfkPjo9pzf';
+
     $key = getenv('MESSAGEKEY');
 
     if (mb_strlen($key, '8bit') !== SODIUM_CRYPTO_SECRETBOX_KEYBYTES) {
@@ -46,7 +49,8 @@ function safeEncrypt(string $message): string
  */
 function safeDecrypt(string $encrypted): string
 {
-    $key = 'S4JZ8mVvoCsmyYdDlSMLHgNfkPji9pzf';
+
+    $key = getenv('MESSAGEKEY');
 
     $decoded = base64_decode($encrypted);
     $nonce = mb_substr($decoded, 0, SODIUM_CRYPTO_SECRETBOX_NONCEBYTES, '8bit');
